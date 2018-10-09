@@ -1,0 +1,20 @@
+Peringatan!!! Jika ada deepfreeze matikan terlebih dahulu ya.... :)
+=============================================================================================
+1. Copy folder lab_kritis ke dalam folder My Documents atau di C:\
+2. Buat shortcut untuk file lab_kritis.exe, kemudian taruh shortcut tersebut kedalam pada folder
+   C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\
+3. Sharing folder lab_kritis yang ada pada C:\program_files, dengan tujuan untuk memudahkan update file exe jika terjadi error
+4. Catat ip komputer user kemudian simpan di file txt, yaitu di file \\10.20.2.2\iti\folder_purnama\ip_lab_kritis.txt
+5. Jalan file lab_kritis.exe untuk mengetes apakah aplikasi bisa berjalan dengan baik
+6. Jika ada keluhan berlanjut segera hubungi dokter Anda, yaitu di ext 277 dan 224 :D
+
+Untuk sharing:
+1. Klik kanan pada folder lab_kritis
+2. Pilih menu Properties
+3. Pilih tab sharing
+4. Klik tombol share, akan muncul dialog sharing
+5. Pilih everyone pada combo box dan klik add
+6. Setting Permission level Read/Write
+7. Klik Share untuk menyimpan
+
+

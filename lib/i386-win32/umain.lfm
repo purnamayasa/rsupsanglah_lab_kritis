@@ -1,0 +1,226 @@
+object frmMain: TfrmMain
+  Left = 641
+  Height = 497
+  Top = 244
+  Width = 477
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Lab Kritis'
+  ClientHeight = 497
+  ClientWidth = 477
+  FormStyle = fsSystemStayOnTop
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnWindowStateChange = FormWindowStateChange
+  Position = poScreenCenter
+  ShowInTaskBar = stNever
+  LCLVersion = '1.6.0.4'
+  WindowState = wsMaximized
+  object IpHtmlPanel1: TIpHtmlPanel
+    Left = 0
+    Height = 159
+    Top = 32
+    Width = 477
+    Align = alClient
+    DataProvider = IpHttpDataProvider1
+    FixedTypeface = 'Courier New'
+    DefaultTypeFace = 'default'
+    DefaultFontSize = 11
+    FlagErrors = False
+    PrintSettings.MarginLeft = 0.5
+    PrintSettings.MarginTop = 0.5
+    PrintSettings.MarginRight = 0.5
+    PrintSettings.MarginBottom = 0.5
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 161
+    Top = 295
+    Width = 477
+    Align = alBottom
+    BorderWidth = 5
+    ClientHeight = 161
+    ClientWidth = 477
+    TabOrder = 1
+    Visible = False
+    object Memo2: TMemo
+      Left = 6
+      Height = 149
+      Top = 6
+      Width = 465
+      Align = alClient
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 104
+    Top = 191
+    Width = 477
+    Align = alBottom
+    BorderWidth = 5
+    Caption = 'Panel3'
+    ClientHeight = 104
+    ClientWidth = 477
+    TabOrder = 2
+    Visible = False
+    object Memo1: TMemo
+      Left = 6
+      Height = 92
+      Top = 6
+      Width = 465
+      Align = alClient
+      TabOrder = 0
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 41
+    Top = 456
+    Width = 477
+    Align = alBottom
+    ClientHeight = 41
+    ClientWidth = 477
+    Color = 15915208
+    ParentColor = False
+    TabOrder = 3
+    object Panel4: TPanel
+      Left = 385
+      Height = 39
+      Top = 1
+      Width = 91
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 39
+      ClientWidth = 91
+      TabOrder = 0
+      object btnTutup: TSpeedButton
+        Left = 24
+        Height = 24
+        Top = 8
+        Width = 55
+        Caption = 'Tutup'
+        Color = clBlue
+        Transparent = False
+        OnClick = btnTutupClick
+      end
+    end
+    object lblClick: TLabel
+      Left = 8
+      Height = 20
+      Top = 8
+      Width = 29
+      Caption = 'Click'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -16
+      Font.Name = 'Arial Narrow'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      OnClick = lblClickClick
+    end
+  end
+  object Panel5: TPanel
+    Left = 0
+    Height = 32
+    Top = 0
+    Width = 477
+    Align = alTop
+    ClientHeight = 32
+    ClientWidth = 477
+    Color = 11229479
+    ParentColor = False
+    TabOrder = 4
+    object lblTitle: TLabel
+      Left = 8
+      Height = 19
+      Top = 8
+      Width = 32
+      Caption = 'Title'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Panel6: TPanel
+      Left = 425
+      Height = 30
+      Top = 1
+      Width = 51
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 30
+      ClientWidth = 51
+      TabOrder = 0
+      object lblTitle1: TLabel
+        Left = 8
+        Height = 19
+        Top = 8
+        Width = 31
+        AutoSize = False
+        Caption = 'v0.6'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+  object IpHttpDataProvider1: TIpHttpDataProvider
+    left = 8
+    top = 112
+  end
+  object tmrKritis1: TTimer
+    Enabled = False
+    OnTimer = tmrKritis1Timer
+    left = 8
+    top = 56
+  end
+  object tmrKritis2: TTimer
+    Enabled = False
+    OnTimer = tmrKritis2Timer
+    left = 40
+    top = 56
+  end
+  object TrayIcon: TTrayIcon
+    BalloonHint = 'Aplikasi Lab Kritis'
+    BalloonTitle = 'Aplikasi Lab Kritis'
+    PopUpMenu = PopupMenu1
+    OnClick = TrayIconClick
+    left = 48
+    top = 112
+  end
+  object PopupMenu1: TPopupMenu
+    left = 80
+    top = 112
+    object mnuKeluar: TMenuItem
+      Caption = 'Keluar'
+      OnClick = mnuKeluarClick
+    end
+  end
+  object tmrBlink: TTimer
+    OnTimer = tmrBlinkTimer
+    left = 72
+    top = 56
+  end
+  object tmrSound: TTimer
+    Interval = 5000
+    OnTimer = tmrSoundTimer
+    left = 104
+    top = 56
+  end
+end

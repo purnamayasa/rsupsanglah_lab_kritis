@@ -1,0 +1,32 @@
+object Form1: TForm1
+  Left = 408
+  Height = 673
+  Top = 238
+  Width = 1067
+  Caption = 'Lab Kritis'
+  ClientHeight = 673
+  ClientWidth = 1067
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object IpHtmlPanel1: TIpHtmlPanel
+    Left = 0
+    Height = 673
+    Top = 0
+    Width = 1067
+    Align = alClient
+    DataProvider = IpHttpDataProvider1
+    FixedTypeface = 'Courier New'
+    DefaultTypeFace = 'default'
+    DefaultFontSize = 12
+    FlagErrors = False
+    PrintSettings.MarginLeft = 0.5
+    PrintSettings.MarginTop = 0.5
+    PrintSettings.MarginRight = 0.5
+    PrintSettings.MarginBottom = 0.5
+    TabOrder = 0
+  end
+  object IpHttpDataProvider1: TIpHttpDataProvider
+    left = 64
+    top = 40
+  end
+end
